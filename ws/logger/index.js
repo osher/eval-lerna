@@ -1,4 +1,5 @@
 const format = require('util').format
+//log
 module.exports = [
   'debug', 'info', 'warn', 'error'
 ].reduce((logger, level) => Object.assign(logger, {[level]: (...args) => {
