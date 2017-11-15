@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\Nodist\\v-x64\\7.2.1\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   'latest' ]
+2 info using npm@4.0.5
+3 info using node@v7.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\ws\\evals\\lerna-eval-indi\\ws\\logger',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\osher\AppData\Roaming\npm-cache\logger\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\osher\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle logger@1.0.0~prepublish: logger@1.0.0
+11 silly lifecycle logger@1.0.0~prepublish: no script for prepublish, continuing
+12 info lifecycle logger@1.0.0~prepare: logger@1.0.0
+13 silly lifecycle logger@1.0.0~prepare: no script for prepare, continuing
+14 verbose tar pack [ 'C:\\Users\\osher\\AppData\\Roaming\\npm-cache\\logger\\1.0.0\\package.tgz',
+14 verbose tar pack   'D:\\ws\\evals\\lerna-eval-indi\\ws\\logger' ]
+15 verbose tarball C:\Users\osher\AppData\Roaming\npm-cache\logger\1.0.0\package.tgz
+16 verbose folder D:\ws\evals\lerna-eval-indi\ws\logger
+17 verbose addLocalTarball adding from inside cache C:\Users\osher\AppData\Roaming\npm-cache\logger\1.0.0\package.tgz
+18 verbose correctMkdir C:\Users\osher\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 silly cache afterAdd logger@1.0.0
+20 verbose afterAdd C:\Users\osher\AppData\Roaming\npm-cache\logger\1.0.0\package\package.json not in flight; writing
+21 verbose correctMkdir C:\Users\osher\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+22 verbose afterAdd C:\Users\osher\AppData\Roaming\npm-cache\logger\1.0.0\package\package.json written
+23 silly publish { name: 'logger',
+23 silly publish   version: '1.0.0',
+23 silly publish   description: '',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+23 silly publish   author: '',
+23 silly publish   license: 'ISC',
+23 silly publish   dependencies: { mocha: '^4.0.1' },
+23 silly publish   devDependencies: { mocha: '^4.0.1' },
+23 silly publish   readme: 'ERROR: No README data found!',
+23 silly publish   _id: 'logger@1.0.0',
+23 silly publish   _shasum: '6dc1d232ec14a1e697666a3e273abcb3ad4a8e35',
+23 silly publish   _from: '.' }
+24 info lifecycle logger@1.0.0~prepublishOnly: logger@1.0.0
+25 silly lifecycle logger@1.0.0~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name logger
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry http://localhost:8888/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'logger',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'logger',
+30 silly mapToRegistry   name: 'logger',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri http://localhost:8888/logger
+32 verbose publish registryBase http://localhost:8888/
+33 silly publish uploading C:\Users\osher\AppData\Roaming\npm-cache\logger\1.0.0\package.tgz
+34 verbose request uri http://localhost:8888/logger
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 6:38:26 PM
+37 verbose request using bearer token for auth
+38 verbose request id 0c4d8acbaa87d506
+39 http request PUT http://localhost:8888/logger
+40 http 409 http://localhost:8888/logger
+41 verbose headers { 'x-powered-by': 'verdaccio/2.6.6',
+41 verbose headers   'access-control-allow-origin': '*',
+41 verbose headers   'content-type': 'application/json; charset=utf-8',
+41 verbose headers   'content-length': '49',
+41 verbose headers   etag: 'W/"31-u1Y+cupz+mmqz86SbSKFOrSYDs8"',
+41 verbose headers   vary: 'Accept-Encoding',
+41 verbose headers   'x-status-cat': 'http://flic.kr/p/aV6jzz',
+41 verbose headers   date: 'Wed, 15 Nov 2017 16:38:26 GMT',
+41 verbose headers   connection: 'keep-alive' }
+42 verbose request invalidating C:\Users\osher\AppData\Roaming\npm-cache\localhost_8888\logger on PUT
+43 verbose request uri http://localhost:8888/logger?write=true
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 6:38:26 PM
+46 verbose request using bearer token for auth
+47 http request GET http://localhost:8888/logger?write=true
+48 http 200 http://localhost:8888/logger?write=true
+49 verbose headers { 'x-powered-by': 'verdaccio/2.6.6',
+49 verbose headers   'access-control-allow-origin': '*',
+49 verbose headers   'content-type': 'application/json; charset=utf-8',
+49 verbose headers   etag: '"b6a474c37b7f50ddbdfee42d02c205fa"',
+49 verbose headers   vary: 'Accept-Encoding',
+49 verbose headers   'content-encoding': 'gzip',
+49 verbose headers   'x-status-cat': 'http://flic.kr/p/aVuVsF',
+49 verbose headers   date: 'Wed, 15 Nov 2017 16:38:26 GMT',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'transfer-encoding': 'chunked' }
+50 verbose stack Error: cannot modify pre-existing version
+50 verbose stack     at conflictError (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\publish.js:183:11)
+50 verbose stack     at CachingRegistryClient.putNext (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\publish.js:145:15)
+50 verbose stack     at C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\publish.js:128:15
+50 verbose stack     at C:\Program Files (x86)\Nodist\npmv\4.0.5\lib\cache\caching-client.js:53:8
+50 verbose stack     at f (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\once\once.js:25:25)
+50 verbose stack     at C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:76:16
+50 verbose stack     at C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:103:12
+50 verbose stack     at f (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\once\once.js:25:25)
+50 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:297:12)
+50 verbose stack     at C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:216:7
+51 verbose pkgid logger
+52 verbose cwd D:\ws\evals\lerna-eval-indi\ws\logger
+53 error Windows_NT 10.0.15063
+54 error argv "C:\\Program Files (x86)\\Nodist\\v-x64\\7.2.1\\node.exe" "C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js" "publish" "--tag" "latest"
+55 error node v7.2.1
+56 error npm  v4.0.5
+57 error code EPUBLISHCONFLICT
+58 error publish fail Cannot publish over existing version.
+59 error publish fail Update the 'version' field in package.json and try again.
+60 error publish fail
+61 error publish fail To automatically increment version numbers, see:
+62 error publish fail npm help version
+63 verbose exit [ 1, true ]
