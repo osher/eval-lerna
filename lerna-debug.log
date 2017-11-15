@@ -1,0 +1,121 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   registry: 'http://localhost:8888/',
+1 silly flags   'force-publish': true,
+1 silly flags   forcePublish: true }
+2 verbose rootPath D:\ws\evals\lerna-eval-indi
+3 info version 2.5.1
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync D:\ws\evals\lerna-eval-indi\VERSION
+7 info ignore [ 'ignored-file', '*.md' ]
+8 silly initialize attempt
+9 info current version null
+10 silly isDetachedHead
+11 silly getCurrentBranch
+12 verbose getCurrentBranch master
+13 verbose isDetachedHead false
+14 silly getCurrentBranch
+15 verbose getCurrentBranch master
+16 silly getUpdates
+17 info Checking for updated packages...
+18 silly hasTags
+19 verbose hasTags true
+20 silly getLastTag
+21 verbose getLastTag vnull
+22 info Comparing with vnull.
+23 verbose updated logger
+24 verbose updated @adtechium/orm
+25 verbose updated web-one
+26 verbose updated web-two
+27 info Checking for prereleased packages...
+28 silly collectDependents
+29 silly isPackageDependentOf logger logger
+30 silly isPackageDependentOf logger @adtechium/orm
+31 silly isPackageDependentOf logger web-one
+32 silly isPackageDependentOf logger web-two
+33 silly isPackageDependentOf @adtechium/orm logger
+34 verbose dependent @adtechium/orm depends on logger
+35 silly isPackageDependentOf @adtechium/orm @adtechium/orm
+36 silly isPackageDependentOf logger @adtechium/orm
+37 silly isPackageDependentOf @adtechium/orm web-one
+38 silly isPackageDependentOf logger web-one
+39 silly isPackageDependentOf @adtechium/orm web-two
+40 silly isPackageDependentOf logger web-two
+41 silly isPackageDependentOf web-one logger
+42 verbose dependent web-one depends on logger
+43 silly isPackageDependentOf web-one @adtechium/orm
+44 verbose dependent web-one depends on @adtechium/orm
+45 silly isPackageDependentOf web-one web-one
+46 silly isPackageDependentOf @adtechium/orm web-one
+47 silly isPackageDependentOf logger web-one
+48 silly isPackageDependentOf web-one web-two
+49 silly isPackageDependentOf @adtechium/orm web-two
+50 silly isPackageDependentOf logger web-two
+51 silly isPackageDependentOf web-two logger
+52 verbose dependent web-two depends on logger
+53 silly isPackageDependentOf web-two @adtechium/orm
+54 verbose dependent web-two depends on @adtechium/orm
+55 silly isPackageDependentOf web-two web-one
+56 silly isPackageDependentOf @adtechium/orm web-one
+57 silly isPackageDependentOf logger web-one
+58 silly isPackageDependentOf web-two web-two
+59 silly isPackageDependentOf @adtechium/orm web-two
+60 silly isPackageDependentOf logger web-two
+61 silly collectUpdates
+62 verbose has filtered update logger
+63 verbose has filtered update @adtechium/orm
+64 verbose has filtered update web-one
+65 verbose has filtered update web-two
+66 silly initialize success
+67 silly execute attempt
+68 silly addFile D:\ws\evals\lerna-eval-indi\lerna.json
+69 silly runScriptSync preversion logger
+70 silly runScriptSync version logger
+71 silly runScriptSync preversion @adtechium/orm
+72 silly runScriptSync version @adtechium/orm
+73 silly runScriptSync preversion web-one
+74 silly runScriptSync version web-one
+75 silly runScriptSync preversion web-two
+76 silly runScriptSync version web-two
+77 silly addFile D:\ws\evals\lerna-eval-indi\ws\logger\package.json
+78 silly addFile D:\ws\evals\lerna-eval-indi\ws\orm\package.json
+79 silly addFile D:\ws\evals\lerna-eval-indi\ws\web-one\package.json
+80 silly addFile D:\ws\evals\lerna-eval-indi\ws\web-two\package.json
+81 silly commit vnull
+82 verbose commit [ 'commit', '--no-gpg-sign', '-m', 'vnull' ]
+83 error execute caught error
+84 error Error: On branch master
+84 error Changes not staged for commit:
+84 error 	deleted:    packages/logger/index.js
+84 error 	deleted:    packages/logger/package.json
+84 error 	deleted:    packages/orm/index.js
+84 error 	deleted:    packages/orm/package.json
+84 error 	deleted:    packages/web-one/index.js
+84 error 	deleted:    packages/web-one/package.json
+84 error 	deleted:    packages/web-two/index.js
+84 error 	deleted:    packages/web-two/package.json
+84 error
+84 error Untracked files:
+84 error 	lerna-debug.log
+84 error 	node_modules/
+84 error 	ws/logger/index.js
+84 error 	ws/logger/node_modules/
+84 error 	ws/logger/npm-debug.log
+84 error 	ws/orm/index.js
+84 error 	ws/orm/node_modules/
+84 error 	ws/web-one/index.js
+84 error 	ws/web-one/node_modules/
+84 error 	ws/web-two/index.js
+84 error 	ws/web-two/node_modules/
+84 error
+84 error no changes added to commit
+84 error
+84 error     at Function.module.exports.sync (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\node_modules\execa\index.js:303:26)
+84 error     at Function.execSync (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+84 error     at Function.commit (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\GitUtilities.js:88:39)
+84 error     at PublishCommand.gitCommitAndTagVersion (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\commands\PublishCommand.js:739:30)
+84 error     at PublishCommand.commitAndTagUpdates (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\commands\PublishCommand.js:704:27)
+84 error     at PublishCommand.execute (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\commands\PublishCommand.js:307:14)
