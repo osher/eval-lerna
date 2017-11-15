@@ -1,0 +1,21 @@
+{
+  "lerna": "2.5.1",
+  "commands": {
+    "publish": {
+      "ignore": [
+        "ignored-file",
+        "*.md"
+      ]
+    },
+    "bootstrap": {
+      "hoist": true
+    },
+    "clean": {
+      "yes" : true
+    }
+  },
+  "packages": [
+    "ws/*"
+  ],
+  "version": "0.0.2"
+}

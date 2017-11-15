@@ -1,0 +1,4 @@
+node_modules
+ws/**/node_modules
+lerna-debug*
+ws/**/npm-debug**
