@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\Nodist\\v-x64\\7.2.1\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   'latest' ]
+2 info using npm@4.0.5
+3 info using node@v7.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\ws\\evals\\lerna-eval-indi\\ws\\logger',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\osher\AppData\Roaming\npm-cache\logger\0.0.7\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\osher\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle logger@0.0.7~prepublish: logger@0.0.7
+11 silly lifecycle logger@0.0.7~prepublish: no script for prepublish, continuing
+12 info lifecycle logger@0.0.7~prepare: logger@0.0.7
+13 silly lifecycle logger@0.0.7~prepare: no script for prepare, continuing
+14 verbose tar pack [ 'C:\\Users\\osher\\AppData\\Roaming\\npm-cache\\logger\\0.0.7\\package.tgz',
+14 verbose tar pack   'D:\\ws\\evals\\lerna-eval-indi\\ws\\logger' ]
+15 verbose tarball C:\Users\osher\AppData\Roaming\npm-cache\logger\0.0.7\package.tgz
+16 verbose folder D:\ws\evals\lerna-eval-indi\ws\logger
+17 verbose addLocalTarball adding from inside cache C:\Users\osher\AppData\Roaming\npm-cache\logger\0.0.7\package.tgz
+18 verbose correctMkdir C:\Users\osher\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 silly cache afterAdd logger@0.0.7
+20 verbose afterAdd C:\Users\osher\AppData\Roaming\npm-cache\logger\0.0.7\package\package.json not in flight; writing
+21 verbose correctMkdir C:\Users\osher\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+22 verbose afterAdd C:\Users\osher\AppData\Roaming\npm-cache\logger\0.0.7\package\package.json written
+23 silly publish { name: 'logger',
+23 silly publish   version: '0.0.7',
+23 silly publish   description: '',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+23 silly publish   author: '',
+23 silly publish   license: 'ISC',
+23 silly publish   dependencies: { mocha: '^4.0.1' },
+23 silly publish   devDependencies: { mocha: '^4.0.1' },
+23 silly publish   readme: 'ERROR: No README data found!',
+23 silly publish   _id: 'logger@0.0.7',
+23 silly publish   _shasum: '082168f9731a112ef5f013f7dc3a6c86d51b8120',
+23 silly publish   _from: '.' }
+24 info lifecycle logger@0.0.7~prepublishOnly: logger@0.0.7
+25 silly lifecycle logger@0.0.7~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name logger
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry http://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'logger',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'logger',
+30 silly mapToRegistry   name: 'logger',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri http://registry.npmjs.org/logger
+32 verbose publish registryBase http://registry.npmjs.org/
+33 silly publish uploading C:\Users\osher\AppData\Roaming\npm-cache\logger\0.0.7\package.tgz
+34 verbose request uri http://registry.npmjs.org/logger
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 3:34:37 PM
+37 verbose request using bearer token for auth
+38 verbose request id 2e03d16d36552d9c
+39 http request PUT http://registry.npmjs.org/logger
+40 http 403 http://registry.npmjs.org/logger
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '100',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Wed, 15 Nov 2017 13:34:14 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-lcy19248-LCY',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1510752853.113633,VS0,VE1138',
+41 verbose headers   vary: 'Accept-Encoding, Accept' }
+42 verbose request invalidating C:\Users\osher\AppData\Roaming\npm-cache\registry.npmjs.org\logger on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: You do not have permission to publish "logger". Are you logged in as the correct user? : logger
+44 verbose stack     at makeError (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:302:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:290:14)
+44 verbose stack     at Request._callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:210:14)
+44 verbose stack     at Request.self.callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:186:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1081:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1001:12)
+45 verbose statusCode 403
+46 verbose pkgid logger
+47 verbose cwd D:\ws\evals\lerna-eval-indi\ws\logger
+48 error Windows_NT 10.0.15063
+49 error argv "C:\\Program Files (x86)\\Nodist\\v-x64\\7.2.1\\node.exe" "C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js" "publish" "--tag" "latest"
+50 error node v7.2.1
+51 error npm  v4.0.5
+52 error code E403
+53 error You do not have permission to publish "logger". Are you logged in as the correct user? : logger
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]

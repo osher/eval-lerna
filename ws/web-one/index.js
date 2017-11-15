@@ -15,7 +15,7 @@ const svr = module.exports = require('http').createServer((q,r) => {
     }
     
     if (v) {
-        logger.debug('setting', k, v)
+        logger.debug('setting ', k, v)
         model.set(k, v)
     }
     
