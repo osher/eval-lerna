@@ -8,7 +8,10 @@
       ]
     },
     "bootstrap": {
-      "ignore": "component-*"
+      "hoist": true
+    },
+    "clean": {
+      "yes" : true
     }
   },
   "packages": [

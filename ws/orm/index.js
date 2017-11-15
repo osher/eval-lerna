@@ -1,6 +1,6 @@
 const logger = require('logger')
 
-
+//aha
 exports.declare = (name) => {
     const data = {}
     return {
