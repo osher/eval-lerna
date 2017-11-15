@@ -14,5 +14,5 @@
   "packages": [
     "ws/*"
   ],
-  "version": null
+  "version": "independent"
 }
