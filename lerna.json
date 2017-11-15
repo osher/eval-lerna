@@ -11,11 +11,11 @@
       "hoist": true
     },
     "clean": {
-      "yes" : true
+      "yes": true
     }
   },
   "packages": [
     "ws/*"
   ],
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
