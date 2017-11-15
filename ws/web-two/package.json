@@ -1,6 +1,6 @@
 {
   "name": "web-two",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@adtechium/orm": "^1.1.1",
+    "@adtechium/orm": "^2.0.0",
     "logger": "^1.0.0"
   },
   "devDependencies": {
