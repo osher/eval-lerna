@@ -1,0 +1,24 @@
+0 silly input [ '..\\lerna-eval-fixed\\packages\\logger' ]
+1 silly flags { _: [ 'import' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   pathToRepo: '..\\lerna-eval-fixed\\packages\\logger' }
+2 verbose rootPath D:\ws\evals\lerna-eval-indi
+3 info version 2.5.1
+4 info versioning independent
+5 silly isInitialized
+6 silly isInitialized true
+7 silly existsSync D:\ws\evals\lerna-eval-indi\VERSION
+8 silly initialize attempt
+9 silly statSync D:\ws\evals\lerna-eval-fixed\packages\logger
+10 silly existsSync D:\ws\evals\lerna-eval-indi\packages\logger
+11 silly getCurrentSHA
+12 error initialize caught error
+13 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+13 error Use '--' to separate paths from revisions, like this:
+13 error 'git <command> [<revision>...] -- [<file>...]'
+13 error
+13 error     at Function.module.exports.sync (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\node_modules\execa\index.js:303:26)
+13 error     at Function.execSync (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+13 error     at Function.getCurrentSHA (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\GitUtilities.js:198:49)
+13 error     at ImportCommand.initialize (C:\Program Files (x86)\Nodist\bin\node_modules\lerna\lib\commands\ImportCommand.js:145:51)
