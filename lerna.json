@@ -1,7 +1,18 @@
 {
   "lerna": "2.5.1",
+  "commands": {
+    "publish": {
+      "ignore": [
+        "ignored-file",
+        "*.md"
+      ]
+    },
+    "bootstrap": {
+      "ignore": "component-*"
+    }
+  },
   "packages": [
-    "packages/*"
+    "ws/*"
   ],
-  "version": "independent"
+  "version": null
 }
