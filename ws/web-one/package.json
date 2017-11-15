@@ -1,6 +1,6 @@
 {
   "name": "web-one",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@adtechium/orm": "^1.0.8",
-    "logger": "^0.0.8"
+    "@adtechium/orm": "^1.1.0",
+    "logger": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^4.0.1"
